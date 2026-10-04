@@ -10,9 +10,10 @@ discovery and not the newer experimental Metal backend**.
 
 See [the build instructions and bounded CPU JIT regression](tests/crisp3ds/darwin-host-jit/README.md).
 The included regression exercises real CPU JIT compilation and execution.
-AliceVision's experimental M1 GPU profile uses a separate, newer upstream
-AdaptiveCpp Metal revision. This branch includes source and build instructions,
-without binaries or datasets.
+For AliceVision on the M1 GPU, use the separate
+[current upstream Metal branch](https://github.com/CrispStrobe/AdaptiveCpp/tree/crisp3ds/m1-metal).
+That branch provides build instructions and a test that requires the Apple GPU.
+Both branches include source and build instructions, without binaries or datasets.
 
 ---
 
