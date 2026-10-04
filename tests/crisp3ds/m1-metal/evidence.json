@@ -1,0 +1,47 @@
+{
+  "schema": "current_upstream_native_m1_metal_branch_v1",
+  "base_upstream_commit": "a215fbcd89087d638769c0a0449bc2abb9350f8e",
+  "official_commit_URL": "https://github.com/AdaptiveCpp/AdaptiveCpp/commit/a215fbcd89087d638769c0a0449bc2abb9350f8e",
+  "upstream_HEAD_verified_at_publication": true,
+  "metal_cpp_commit": "27c4382b7151d55a51692cdcb27aaa98752240de",
+  "runtime_compiler_source_changes": [],
+  "source_files_exact_to_sealed_installed_source": 1025,
+  "source_comparison_excludes": "README branch introduction only; branch-specific new test/docs assets were not part of upstream source",
+  "validation": {
+    "status": "native_metal_geometry_kernel_verified",
+    "actual_device": "Apple M1",
+    "actual_backend": "Metal",
+    "normals_verified": 1024,
+    "maximum_error": 1.09034e-07,
+    "host_reference": "independent double calculation; GPU kernel float32",
+    "maximum_allowed_error": 1e-05,
+    "no_CPU_fallback": true,
+    "inputs_unchanged": true,
+    "installed_files_unchanged": true,
+    "seconds": 6.669757541967556,
+    "stages": [
+      {
+        "name": "compile",
+        "returncode": 0,
+        "seconds": 5.7652953749056906
+      },
+      {
+        "name": "execute",
+        "returncode": 0,
+        "seconds": 0.7729670830303803
+      }
+    ],
+    "fresh_JIT_cache": true,
+    "result_sha256": "8b28080eb173de556dcf2957724d46dfbc5ebd4509097236a9b70f9fe584bd6e",
+    "execution_log_sha256": "30044b432bff3ebf31e86d4bb3e1553288326ed041b85835d33e23219c74d02b"
+  },
+  "assets_sha256": {
+    "smoke.cpp": "29ac43208380b09a8dc9faa7bb6ec99e418410a2eb20f3101924c7bccc29a159",
+    "run_smoke.py": "2a87dc364922cc203b4190e47b5f087146960ef679fb287aa5e95e09eb6adf63",
+    "README.md": "25c1cb6a6e5e1af31a37b69a168ebe999e332515a1570f0c1ea60f96d75ebae8"
+  },
+  "frozen_installed_configuration_sha256": "6bec790e77b64f81e5361f1021f35977c14b8788478f4f140e2eaad4f2ab0037",
+  "old_CPU_branch_unchanged": true,
+  "not_new_runtime_port": true,
+  "not_reconstruction_accuracy_or_speed_benchmark": true
+}

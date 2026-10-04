@@ -1,3 +1,22 @@
+# Current upstream AdaptiveCpp on Apple M1 Metal
+
+This fork branch starts at upstream develop commit
+`a215fbcd89087d638769c0a0449bc2abb9350f8e`, the current upstream HEAD checked
+on 2026-10-04. **The Metal runtime and compiler source are unchanged from
+upstream.** This branch adds reproducible M1 build instructions and a strict
+GPU kernel smoke test. The actual Apple M1 build and float geometry kernel
+have been verified; this is documentation and validation of upstream's
+experimental Metal support, not a new runtime port.
+
+Start with [the M1 Metal build and GPU regression instructions](tests/crisp3ds/m1-metal/README.md).
+The smoke test requires the Metal GPU backend and verifies 1,024 computed
+normals. It rejects CPU fallback. FP64 and 64-bit atomics remain unsupported
+by this experimental backend. The separate
+[`crisp3ds/darwin-host-jit` branch](https://github.com/CrispStrobe/AdaptiveCpp/tree/crisp3ds/darwin-host-jit)
+is an older v25.10.0 CPU linker backport.
+
+---
+
 ![Project logo](/doc/img/logo/logo-color.png)
 
 # AdaptiveCpp (formerly known as hipSYCL / Open SYCL)
