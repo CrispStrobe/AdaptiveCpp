@@ -1,0 +1,37 @@
+{
+  "base_commit": "9f842c701a599107cc6d117d3539f971036363a1",
+  "release": "v25.10.0",
+  "original_source_sha256": "460f106311f935ebf3bb12871b270239bb8f415a09940c2a1dbe81180247acc8",
+  "tested_patched_source_sha256": "2ef6a6e9ab7d1d758957ad1f0220ad5cbaf7d13e8a6a962bec7bac8cdb3e1139",
+  "patch_sha256": "48e192f5fa31d3a9d24f1e7161759a810c226d3c91322b6d1bfdc567e1f32021",
+  "smoke_source_sha256": "55b5d2c2106c790a0786fe29c901291073defd86105bef94b64fbef02fa4c2ad",
+  "original_smoke_result_sha256": "215539a3c38abac2675f95ce8eed46ec5ec561e22a74982ff03cbe2893f0bc2a",
+  "verified_install_receipt_sha256": "fd6602e9ccbba37ad5d673e4efff313fe898145b83eb2f46d549900a139446c6",
+  "original_validation": {
+    "cpu_kernel_outputs": 1024,
+    "type": "double",
+    "status": "generic_cpu_runtime_verified",
+    "metal_tested": false
+  },
+  "scope": "Darwin host generic CPU JIT on old release only. Develop Metal backend remains unchanged. SDK path is intentionally identical to tested installation; not claimed portable to other SDK layouts.",
+  "fork_asset_validation": {
+    "status": "generic_cpu_kernel_verified",
+    "inputs_unchanged": true,
+    "executed_against": "sealed installation built from the exact tested patched source, not a new fork rebuild",
+    "stages": [
+      {
+        "name": "compile",
+        "returncode": 0,
+        "seconds": 4.154560500057414
+      },
+      {
+        "name": "execute",
+        "returncode": 0,
+        "seconds": 0.94935308303684
+      }
+    ],
+    "result_sha256": "f9dcaa308b5655bc1e53ef9f618067a994f7c677322cc29ad3309c983d4cf7ec",
+    "execution_log_sha256": "15fb888014da2f4071e1b68a1ab40f722b3a2fe74716e1d09bcfd729276edf97",
+    "runner_sha256": "982406e6e1e76fe503507495f530f1cb6fe606365ea04f21bd0d69d4257af14d"
+  }
+}
