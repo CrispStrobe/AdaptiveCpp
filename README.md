@@ -9,10 +9,10 @@ intentionally the tested full-Xcode layout, so this is **not universal SDK
 discovery and not the newer experimental Metal backend**.
 
 See [the build instructions and bounded CPU JIT regression](tests/crisp3ds/darwin-host-jit/README.md).
-The real OpenMP CPU kernel verifies all 1,024 double outputs with FP64 and USM;
-a device query alone is not the validation. AliceVision's experimental M1 GPU
-profile uses a separate, newer upstream AdaptiveCpp Metal revision. This branch
-ships no binaries or datasets and makes no photogrammetry-quality claim.
+The included regression exercises real CPU JIT compilation and execution.
+AliceVision's experimental M1 GPU profile uses a separate, newer upstream
+AdaptiveCpp Metal revision. This branch includes source and build instructions,
+without binaries or datasets.
 
 ---
 
