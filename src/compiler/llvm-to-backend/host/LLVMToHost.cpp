@@ -271,6 +271,8 @@ bool LLVMToHostTranslator::translateToBackendFormat(llvm::Module &FlavoredModule
 #endif                                              // TODO Figure out platform version programmatically
                                                     "-platform_version","macos", os_version, os_version,
                                                     "-mllvm", "-enable-linkonceodr-outlining",
+                                                    "-syslibroot", "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk",
+                                                    "-lSystem",
                                                     "-o",
                                                     OutputFileName,
                                                     LlcOutputFileName,
