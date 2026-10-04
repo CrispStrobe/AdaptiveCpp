@@ -1,5 +1,21 @@
 ![Project logo](/doc/img/logo/logo-color.png)
 
+## Crisp3DS Darwin CPU branch (`crisp3ds/darwin-host-jit`)
+
+This fork branch starts at AdaptiveCpp v25.10.0,
+`9f842c701a599107cc6d117d3539f971036363a1`. It backports the Darwin generic-CPU
+JIT linker fix for the tested Xcode SDK and `libSystem`. The SDK pathname is
+intentionally the tested full-Xcode layout, so this is **not universal SDK
+discovery and not the newer experimental Metal backend**.
+
+See [the build instructions and bounded CPU JIT regression](tests/crisp3ds/darwin-host-jit/README.md).
+The real OpenMP CPU kernel verifies all 1,024 double outputs with FP64 and USM;
+a device query alone is not the validation. AliceVision's experimental M1 GPU
+profile uses a separate, newer upstream AdaptiveCpp Metal revision. This branch
+ships no binaries or datasets and makes no photogrammetry-quality claim.
+
+---
+
 # AdaptiveCpp (formerly known as hipSYCL / Open SYCL)
 
 **(Note: This project is currently in progress of changing its name to AdaptiveCpp due to external legal pressure. Documentation and code may still use the older name hipSYCL / Open SYCL)**
